@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 img.setImageResource(R.drawable.x);
                 activeplayer = 1;
                 TextView status = findViewById(R.id.status);
-                status.setText("O's Turn - Tap to play");
+                status.setText("Now:O's Turn - Tap to play game");
             } else {
                 img.setImageResource(R.drawable.o);
                 activeplayer = 0;
                 TextView status = findViewById(R.id.status);
-                status.setText("X's Turn - Tap to play");
+                status.setText("Now:X's Turn - Tap to play game");
             }
 
 
@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
              gameactive = false;
              if(gamestate[winposition[0]] == 0){
                 //winnerstr = "X has won";
-                winnerstr = "X has won";
+                winnerstr = "congratulation X has won the game";
              }else{
-                 winnerstr = "O has won";
+                 winnerstr = "congratulation O has won the game";
              }
              //update the status bar for winner
              TextView status = findViewById(R.id.status);
